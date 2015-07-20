@@ -1,6 +1,7 @@
 <?php
 class Account extends CI_Controller{
 public function __construct(){
+		global $baseURL;
 		parent::__construct();
 		$baseURL = getcwd();
 		require_once("$baseURL/application/third_party/user_cake/models/class.user.php");
